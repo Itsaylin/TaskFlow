@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link href="register.ico" rel="icon" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="plant.ico" rel="icon" type="image/x-icon">
+    <script src="life.js" defer></script>
+</head>
+<body>
+    <div class="center mt-3 ">
+        <div class="card shadow text-white bg-dark mb-3 rounded" style="width: 47rem; height: 500px;">
+            <div class="card-body" style="background-color: white;">
+                  <h5 style="font-family:monospace;" >TaskFlow</h5>
+                <form id="register-form" style="color: black;">
+                    <div class="form-group" style="font-family:monospace;">
+                        <p>User Full Name</p>
+                        <input type="text" class="form-control" id="fullname" placeholder="Write your full name"
+                            required>
+                    </div>
+                    <br>
+                    <div class="form-group" style="font-family:monospace;">
+                        <p>Username</p>
+                        <input type="text" class="form-control" id="username"
+                            placeholder="Create a username" required>
+                    </div>
+                    <br>
+                    <div class="form-group" style="font-family:monospace;">
+                        <p>Password</p>
+                        <input type="password" class="form-control" id="password"
+                            placeholder="Create a password" required>
+                        <br>
+                        <button type="submit" class="btn btn-light" onclick="store(event)">Register</button>
+                    </div>
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
